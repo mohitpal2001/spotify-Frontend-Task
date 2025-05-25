@@ -1,12 +1,30 @@
-# React + Vite
+# 🎧 Spotify Auth App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A React-based app that uses Spotify's OAuth 2.0 Authorization Code Flow with PKCE to authenticate users and display their playlists and liked songs. Inspired by Spotify’s UI and built using React, TailwindCSS, and the Spotify Web API.
 
-Currently, two official plugins are available:
+## 🚀 Live Demo
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+👉 [Live App](https://your-vercel-or-netlify-link.com)
 
-## Expanding the ESLint configuration
+## 🔧 Tech Stack
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- React.js
+- TailwindCSS
+- React Router
+- Spotify Web API
+- OAuth 2.0 (PKCE Flow)
+
+## ⚙️ Setup Instructions
+
+1. **Clone the repo**
+   ```bash
+   git clone https://github.com/your-username/spotify-auth-app.git
+   cd spotify-auth-app
+2. Install dependencies
+3. Create a .env file in the root
+4. Run the app
+
+ Assumptions
+* The Spotify Developer app is correctly configured with the redirect URI.
+* The app uses preview_url from Spotify tracks. Many tracks may not include a preview and return null.
+* For full track playback, Spotify Premium and Web Playback SDK are needed (not included in this app).
